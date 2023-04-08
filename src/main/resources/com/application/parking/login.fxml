@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="279.0" prefWidth="397.0" style="-fx-background-color: #3E616B;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.parking.Gere_Parking.G_Login.LoginController">
+   <children>
+      <Label layoutX="112.0" layoutY="28.0" text="Parking Hmuda 001" textFill="#e9e9eb">
+         <font>
+            <Font name="Segoe Script Bold" size="22.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="69.0" layoutY="81.0" prefHeight="175.0" prefWidth="277.0" style="-fx-border-color: #385962;">
+         <children>
+            <Label layoutX="11.0" layoutY="32.0" prefHeight="21.0" prefWidth="101.0" text="CIN" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputUserName" layoutX="115.0" layoutY="30.0" />
+            <Label layoutX="11.0" layoutY="78.0" prefHeight="21.0" prefWidth="101.0" text="Password" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="inputPassword" layoutX="115.0" layoutY="76.0" />
+            <JFXButton layoutX="113.0" layoutY="137.0" onMouseClicked="#submit" styleClass="btn" stylesheets="@login.css" text="Submit" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="187.0" layoutY="137.0" onMouseClicked="#reset" prefHeight="23.0" prefWidth="66.0" styleClass="btn" stylesheets="@login.css" text="Reset" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label fx:id="notification" layoutX="123.0" layoutY="109.0" text="Wrong text" textFill="#2f1111" visible="false">
+               <font>
+                  <Font name="Microsoft Tai Le" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Circle fill="#1a5565" layoutX="15.0" layoutY="2.0" radius="63.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

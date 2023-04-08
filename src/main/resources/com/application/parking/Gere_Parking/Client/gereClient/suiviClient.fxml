@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="488.0" minWidth="412.0" prefHeight="461.0" prefWidth="412.0" style="-fx-background-color: #577d86;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.parking.Gere_Parking.G_Menu.Client.gereClient.SuiviClient">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="412.0" style="-fx-background-color: #3E616B  #3E616B;">
+         <children>
+            <Label layoutX="127.0" layoutY="19.0" text="Suivi User" textFill="#e9e9eb">
+               <font>
+                  <Font name="Book Antiqua" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="82.0" prefHeight="379.0" prefWidth="412.0">
+         <children>
+            <Label fx:id="notification" layoutX="215.0" layoutY="272.0" prefHeight="21.0" prefWidth="187.0" text="*ERROR" textFill="#a63317" visible="false">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="309.0" layoutY="334.0" onMouseClicked="#ok" prefHeight="23.0" prefWidth="91.0" styleClass="btnMenu" stylesheets="@../../../Style.css" text="OK" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="77.0" layoutY="28.0" prefHeight="21.0" prefWidth="102.0" text="Prenom" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="outputPrenom" editable="false" layoutX="192.0" layoutY="26.0" />
+            <TableView fx:id="UserSuivi" layoutX="50.0" layoutY="78.0" prefHeight="217.0" prefWidth="320.0">
+               <columns>
+                  <TableColumn fx:id="Date" minWidth="106.67" prefWidth="75.0" text="Date" />
+                  <TableColumn fx:id="Time_Entre" minWidth="106.67" prefWidth="75.0" text="Time_Entre" />
+                  <TableColumn fx:id="Time_Sortie" minWidth="106.67" prefWidth="75.0" text="Time_Sortie" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="Parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="610.0" style="-fx-background-color: #577d86;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.parking.ParentController">
+   <left>
+      <AnchorPane maxWidth="122.0" minWidth="122.0" prefHeight="459.0" prefWidth="122.0" style="-fx-background-color: #3E616B  #3E616B;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutY="-1.0" prefHeight="114.0" prefWidth="122.0" style="-fx-background-color: #3E616B  #3E616B;">
+               <children>
+                  <Circle fx:id="zoneImg" fill="#d7dce047" layoutX="61.0" layoutY="52.0" radius="45.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="zoneMenu" layoutY="128.0" prefHeight="337.0" prefWidth="122.0" style="-fx-background-color: #3E616B  #3E616B;">
+               <children>
+                  <VBox layoutX="8.0" layoutY="7.0" prefHeight="323.0" prefWidth="100.0">
+                     <children>
+                        <ToggleButton fx:id="Acceuil" mnemonicParsing="false" onAction="#swapMenu" prefHeight="46.0" prefWidth="100.0" styleClass="btnMenu" stylesheets="@Style.css" text="Acceuil" textFill="#e9e9eb">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ToggleButton>
+                        <ToggleButton fx:id="Gere_Client" mnemonicParsing="false" onAction="#swapMenu" prefHeight="46.0" prefWidth="100.0" styleClass="btnMenu" stylesheets="@Style.css" text="G_Client" textFill="#e9e9eb">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ToggleButton>
+                        <ToggleButton fx:id="Commence_Abonement" mnemonicParsing="false" onAction="#swapMenu" prefHeight="46.0" prefWidth="100.0" styleClass="btnMenu" stylesheets="@Style.css" text="C_Abnmt" textFill="#e9e9eb">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ToggleButton>
+                        <ToggleButton fx:id="Paye" mnemonicParsing="false" onAction="#swapMenu" prefHeight="46.0" prefWidth="100.0" styleClass="btnMenu" stylesheets="@Style.css" text="Paye" textFill="#e9e9eb">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ToggleButton>
+                        <ToggleButton fx:id="Gere_Type_Abonement" mnemonicParsing="false" onAction="#swapMenu" prefHeight="46.0" prefWidth="100.0" styleClass="btnMenu" stylesheets="@Style.css" text="G_TAbnmt" textFill="#e9e9eb">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ToggleButton>
+                        <ToggleButton fx:id="Gere_User" mnemonicParsing="false" onAction="#swapMenu" prefHeight="46.0" prefWidth="100.0" styleClass="btnMenu" stylesheets="@Style.css" text="G_User" textFill="#e9e9eb">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ToggleButton>
+                        <ToggleButton fx:id="exit" mnemonicParsing="false" onAction="#swapMenu" prefHeight="31.0" prefWidth="100.0" styleClass="btnMenu" stylesheets="@Style.css" text="Exit" textFill="#e9e9eb">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ToggleButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <Label fx:id="userName" alignment="CENTER" layoutY="100.0" prefHeight="29.0" prefWidth="121.0" style="-fx-background-color: #1a5565;" text="UserName" textFill="#e1e1ff">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

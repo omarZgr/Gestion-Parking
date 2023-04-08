@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="488.0" minWidth="488.0" prefHeight="459.0" prefWidth="488.0" style="-fx-background-color: #577d86;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.parking.Gere_Parking.G_Menu.Abonement.AbonementController">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="488.0" style="-fx-background-color: #3E616B  #3E616B;">
+         <children>
+            <Label layoutX="207.0" layoutY="14.0" text="Paye" textFill="#e9e9eb">
+               <font>
+                  <Font name="Book Antiqua" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pageAbnmt1" layoutX="2.0" layoutY="82.0" prefHeight="379.0" prefWidth="484.0">
+         <children>
+            <Label layoutX="99.0" layoutY="66.0" prefHeight="21.0" prefWidth="137.0" text="CIN" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="236.0" layoutY="64.0" />
+            <JFXButton layoutX="365.0" layoutY="320.0" styleClass="btnMenu" stylesheets="@../../Style.css" text="Enregistrer" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="99.0" layoutY="119.0" prefHeight="21.0" prefWidth="137.0" text="Nom" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <TextField editable="false" layoutX="236.0" layoutY="117.0" />
+            <Label layoutX="99.0" layoutY="169.0" prefHeight="21.0" prefWidth="137.0" text="Prenom" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <TextField editable="false" layoutX="236.0" layoutY="167.0" />
+            <Label layoutX="99.0" layoutY="221.0" prefHeight="21.0" prefWidth="137.0" text="Matricule" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <TextField editable="false" layoutX="236.0" layoutY="219.0" />
+            <Label layoutX="236.0" layoutY="270.0" text="*Wrong Msg" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

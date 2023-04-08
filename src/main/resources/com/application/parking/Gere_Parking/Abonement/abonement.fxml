@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="488.0" minWidth="488.0" prefHeight="459.0" prefWidth="488.0" style="-fx-background-color: #577d86;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.parking.Gere_Parking.G_Menu.Abonement.AbonementController">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="488.0" style="-fx-background-color: #3E616B  #3E616B;">
+         <children>
+            <Label layoutX="84.0" layoutY="18.0" text="Commence Abonement" textFill="#e9e9eb">
+               <font>
+                  <Font name="Book Antiqua" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="2.0" layoutY="82.0" prefHeight="379.0" prefWidth="488.0">
+         <children>
+            <Label layoutX="61.0" layoutY="33.0" prefHeight="21.0" prefWidth="137.0" text="Type Abonemt" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="listAbnment" editable="true" layoutX="214.0" layoutY="31.0" onAction="#getData" prefWidth="150.0" />
+            <Label layoutX="62.0" layoutY="87.0" prefHeight="21.0" prefWidth="137.0" text="CIN Client" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputCIN" layoutX="215.0" layoutY="85.0" />
+            <Label layoutX="64.0" layoutY="147.0" prefHeight="21.0" prefWidth="137.0" text="Montant" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="outputMontant" editable="false" layoutX="216.0" layoutY="145.0" />
+            <Label layoutX="65.0" layoutY="201.0" prefHeight="21.0" prefWidth="137.0" text="Date Debut" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="DateNow" editable="false" layoutX="217.0" layoutY="199.0" />
+            <Label layoutX="65.0" layoutY="254.0" prefHeight="21.0" prefWidth="137.0" text="Date Fin" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="DateFin_Abnmt" editable="false" layoutX="217.0" layoutY="252.0" />
+            <JFXButton layoutX="365.0" layoutY="320.0" onMouseClicked="#enregister" styleClass="btnMenu" stylesheets="@../../Style.css" text="Enregistrer" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label fx:id="notification" layoutX="217.0" layoutY="291.0" prefHeight="21.0" prefWidth="187.0" text="*ERROR" textFill="#a63317" visible="false">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

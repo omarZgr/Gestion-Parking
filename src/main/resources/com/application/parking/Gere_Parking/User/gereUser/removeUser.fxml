@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="488.0" minWidth="412.0" prefHeight="461.0" prefWidth="412.0" style="-fx-background-color: #577d86;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.parking.Gere_Parking.G_Menu.User.gereUser.RemoveUser">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="412.0" style="-fx-background-color: #3E616B  #3E616B;">
+         <children>
+            <Label layoutX="118.0" layoutY="19.0" text="Modifiy User-" textFill="#e9e9eb">
+               <font>
+                  <Font name="Book Antiqua" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="82.0" prefHeight="379.0" prefWidth="412.0">
+         <children>
+            <VBox layoutX="21.0" layoutY="32.0" prefHeight="249.0" prefWidth="370.0">
+               <children>
+                  <AnchorPane prefHeight="33.0" prefWidth="370.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="24.0" prefHeight="21.0" prefWidth="137.0" text="Nom " textFill="#e9e9eb">
+                           <font>
+                              <Font name="Bookman Old Style" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="outputNom" editable="false" layoutX="196.0" layoutY="22.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="33.0" prefWidth="370.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="24.0" prefHeight="21.0" prefWidth="137.0" text="Prenom" textFill="#e9e9eb">
+                           <font>
+                              <Font name="Bookman Old Style" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="outputPrenom" editable="false" layoutX="196.0" layoutY="22.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="33.0" prefWidth="370.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="24.0" prefHeight="21.0" prefWidth="137.0" text="Tel" textFill="#e9e9eb">
+                           <font>
+                              <Font name="Bookman Old Style" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="outputTel" editable="false" layoutX="196.0" layoutY="22.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="33.0" prefWidth="370.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="24.0" prefHeight="21.0" prefWidth="137.0" text="CIN" textFill="#e9e9eb">
+                           <font>
+                              <Font name="Bookman Old Style" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="outputCIN" editable="false" layoutX="196.0" layoutY="22.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="33.0" prefWidth="370.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="24.0" prefHeight="21.0" prefWidth="149.0" text="Date Inscription" textFill="#e9e9eb">
+                           <font>
+                              <Font name="Bookman Old Style" size="18.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="outputDateInscritpion" editable="false" layoutX="196.0" layoutY="19.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <Label fx:id="notification" layoutX="215.0" layoutY="272.0" prefHeight="21.0" prefWidth="187.0" text="*ERROR" textFill="#a63317" visible="false">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="309.0" layoutY="334.0" onMouseClicked="#enregister" prefHeight="23.0" prefWidth="91.0" styleClass="btnMenu" stylesheets="@../../../Style.css" text="Enregister" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

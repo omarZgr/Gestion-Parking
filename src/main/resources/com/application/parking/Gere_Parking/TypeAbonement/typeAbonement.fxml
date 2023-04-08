@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="488.0" minWidth="488.0" onMouseEntered="#updateData" prefHeight="459.0" prefWidth="488.0" style="-fx-background-color: #577d86;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.parking.Gere_Parking.G_Menu.TypeAbonement.TypeAbonementController">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="488.0" style="-fx-background-color: #3E616B  #3E616B;">
+         <children>
+            <Label layoutX="84.0" layoutY="18.0" text="Gere Type Abonement" textFill="#e9e9eb">
+               <font>
+                  <Font name="Book Antiqua" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="82.0" prefHeight="379.0" prefWidth="484.0">
+         <children>
+            <TableView fx:id="tableTypeAbnment" layoutX="39.0" layoutY="59.0" prefHeight="200.0" prefWidth="409.0">
+               <columns>
+                  <TableColumn fx:id="NomAbnmt" prefWidth="102.0" text="NomAbnmt" />
+                  <TableColumn fx:id="Duree" prefWidth="102.0" text="Duree" />
+                  <TableColumn fx:id="Prix" prefWidth="102.0" text="Prix" />
+                  <TableColumn fx:id="NbrUser" prefWidth="102.0" text="nbrUser" />
+               </columns>
+            </TableView>
+            <JFXButton layoutX="113.0" layoutY="298.0" onMouseClicked="#add" prefHeight="23.0" prefWidth="68.0" styleClass="btnMenu" stylesheets="@../../Style.css" text="Add" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="296.0" layoutY="298.0" onMouseClicked="#remove" prefHeight="23.0" prefWidth="80.0" styleClass="btnMenu" stylesheets="@../../Style.css" text="Remove" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="191.0" layoutY="298.0" onMouseClicked="#modifiy" prefHeight="23.0" prefWidth="90.0" styleClass="btnMenu" stylesheets="@../../Style.css" text="Modifiy" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

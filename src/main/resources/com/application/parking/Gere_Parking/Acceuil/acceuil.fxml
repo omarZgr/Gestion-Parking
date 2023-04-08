@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="488.0" minWidth="488.0" prefHeight="459.0" prefWidth="488.0" style="-fx-background-color: #577d86;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.parking.Gere_Parking.G_Menu.Acceuil.AcceuilController">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="488.0" style="-fx-background-color: #3E616B  #3E616B;">
+         <children>
+            <Label layoutX="191.0" layoutY="17.0" text="Accueil" textFill="#e9e9eb">
+               <font>
+                  <Font name="Book Antiqua" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="5.0" layoutY="82.0" prefHeight="379.0" prefWidth="488.0">
+         <children>
+            <HBox layoutX="13.0" layoutY="315.0" prefHeight="49.0" prefWidth="458.0">
+               <children>
+                  <AnchorPane prefHeight="60.0" prefWidth="147.0">
+                     <children>
+                        <Label layoutX="15.0" layoutY="18.0" prefHeight="21.0" prefWidth="65.0" text="Total" textFill="#e9e9eb">
+                           <font>
+                              <Font name="Bookman Old Style" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="outputTotal" editable="false" layoutX="88.0" layoutY="18.0" prefHeight="15.0" prefWidth="32.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="60.0" prefWidth="147.0">
+                     <children>
+                        <Label layoutX="15.0" layoutY="18.0" prefHeight="21.0" prefWidth="80.0" text="Reserve" textFill="#e9e9eb">
+                           <font>
+                              <Font name="Bookman Old Style" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="outputReserve" editable="false" layoutX="95.0" layoutY="18.0" prefHeight="15.0" prefWidth="32.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="60.0" prefWidth="147.0">
+                     <children>
+                        <Label layoutX="23.0" layoutY="18.0" prefHeight="21.0" prefWidth="57.0" text="Free" textFill="#e9e9eb">
+                           <font>
+                              <Font name="Bookman Old Style" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="outputFree" editable="false" layoutX="88.0" layoutY="18.0" prefHeight="15.0" prefWidth="32.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <Label layoutX="6.0" layoutY="22.0" prefHeight="21.0" prefWidth="100.0" text="Padge IN  :" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputPadgeIN" layoutX="107.0" layoutY="21.0" onMouseReleased="#inputPadgeINClicked" prefHeight="25.0" prefWidth="113.0" />
+            <TableView fx:id="tableListeParking" layoutX="45.0" layoutY="72.0" prefHeight="217.0" prefWidth="396.0">
+               <columns>
+                  <TableColumn fx:id="tableListeParking_Nom" prefWidth="132.0" text="Nom" />
+                  <TableColumn fx:id="tableListeParking_Prenom" prefWidth="132.0" text="Prenom" />
+                  <TableColumn fx:id="tableListeParking_Entre" prefWidth="132.0" text="Time Entre" />
+               </columns>
+            </TableView>
+            <Label layoutX="239.0" layoutY="22.0" prefHeight="21.0" prefWidth="123.0" text="Padge OUT  :" textFill="#e9e9eb">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputPadgeOUT" layoutX="359.0" layoutY="20.0" onKeyPressed="#inputPadgeOUTClicked" prefHeight="25.0" prefWidth="113.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
